@@ -1,22 +1,15 @@
 import 'dart:convert';
 
-import 'package:equatable/equatable.dart';
+import 'package:rodadas_futebol_crud/app/modules/home/domain/entities/team.dart';
 
-class Team extends Equatable {
+class TeamModel extends Team {
   final int id;
   final String initial;
   final String urlLogo;
   final String name;
 
-  Team(
-    this.id,
-    this.initial,
-    this.urlLogo,
-    this.name,
-  );
-
-  @override
-  List<Object> get props => [id, initial];
+  TeamModel(this.id, this.initial, this.urlLogo, this.name)
+      : super(id, initial, urlLogo, name);
 
   Map<String, dynamic> toMap() {
     return {
@@ -27,8 +20,8 @@ class Team extends Equatable {
     };
   }
 
-  factory Team.fromMap(Map<String, dynamic> map) {
-    return Team(
+  factory TeamModel.fromMap(Map<String, dynamic> map) {
+    return TeamModel(
       map['id'],
       map['initial'],
       map['urlLogo'],
@@ -38,5 +31,6 @@ class Team extends Equatable {
 
   String toJson() => json.encode(toMap());
 
-  factory Team.fromJson(String source) => Team.fromMap(json.decode(source));
+  factory TeamModel.fromJson(String source) =>
+      TeamModel.fromMap(json.decode(source));
 }

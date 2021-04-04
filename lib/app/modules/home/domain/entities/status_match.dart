@@ -1,1 +1,1 @@
-enum StatusGame { none, start, finish }
+enum StatusMatch { none, start, finish }

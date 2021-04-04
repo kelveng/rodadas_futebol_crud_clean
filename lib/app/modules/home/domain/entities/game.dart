@@ -10,4 +10,11 @@ class Game {
 
   Game(this.masterTeam, this.visitorTeam, this.status, this.masterGol,
       this.visitorGol);
+
+  Team winnerTeam() {
+    if (masterGol > visitorGol) return masterTeam;
+    if (masterGol < visitorGol) return visitorTeam;
+
+    return null;
+  }
 }
