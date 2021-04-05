@@ -4,6 +4,13 @@ A new Flutter project. Created by Slidy
 
 ## Getting Started
 
+## Proposta:
+  Desenvolver um aplicativo de gerenciamento de rodadas de futebol.
+
+## Validação de conhecimento:
+  - Testes
+  - Clean Architecture
+  
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
