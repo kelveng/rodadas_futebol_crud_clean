@@ -1,4 +1,4 @@
-import 'status_game.dart';
+import '../utils/status_game.dart';
 import 'team.dart';
 
 class Game {

@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:rodadas_futebol_crud/app/modules/home/domain/entities/game.dart';
-import 'package:rodadas_futebol_crud/app/modules/home/domain/entities/status_game.dart';
+import 'package:rodadas_futebol_crud/app/modules/home/domain/utils/status_game.dart';
 import 'package:rodadas_futebol_crud/app/modules/home/domain/entities/team.dart';
 
 class GameModel extends Game {

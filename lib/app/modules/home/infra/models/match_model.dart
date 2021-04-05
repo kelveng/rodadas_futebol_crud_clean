@@ -1,9 +1,8 @@
 import 'dart:convert';
 import 'package:dartz/dartz_unsafe.dart';
 import 'package:rodadas_futebol_crud/app/modules/home/domain/entities/match.dart';
-import 'package:rodadas_futebol_crud/app/modules/home/domain/entities/status_match.dart';
+import 'package:rodadas_futebol_crud/app/modules/home/domain/utils/status_match.dart';
 import 'package:rodadas_futebol_crud/app/modules/home/infra/models/game_model.dart';
-import 'package:rodadas_futebol_crud/app/modules/home/infra/models/team_model.dart';
 
 class MatchModel extends Match {
   final int id;

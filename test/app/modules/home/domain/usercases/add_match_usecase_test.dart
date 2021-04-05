@@ -12,7 +12,7 @@ class MatchRepositoryMock extends Mock implements MatchRepository {}
 main() {
   final repository = MatchRepositoryMock();
   final addMatchUseCaseImpl = AddMatchUseCaseImpl(repository);
-  test("deve retornar um Match em caso de sucesso.", () async {
+  test("deve retornar um Match.", () async {
     final games = [GameModel()];
     final matchModelSucess = MatchModel(description: "teste", games: games);
     when(repository.createMatch(any))
